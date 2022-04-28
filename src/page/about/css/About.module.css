@@ -1,0 +1,39 @@
+.container{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+}
+.cards_container{
+  margin: auto;
+  width: 800px;
+  min-height: 55vh;
+  max-width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container::before{
+  content: "";
+  width: 40%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  bottom: 0;
+  background: #e6dace;
+}
+
+@media screen and (max-width: 775px){
+  .container::before{
+    width: 100%;
+    height: 600px;
+    bottom: 0px;
+  }
+  
+}
