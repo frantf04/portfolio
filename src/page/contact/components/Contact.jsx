@@ -1,7 +1,5 @@
 import React, {useState } from 'react'
 import styles from '../css/Contact.module.css'
-// import Button from '../../../common/Button'
-// import { Link } from 'react-router-dom'
 import Swal from 'sweetalert2'
 
 
