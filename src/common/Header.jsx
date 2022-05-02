@@ -15,7 +15,6 @@ function Header() {
 
   const navActive = (e) => {
     if (refNav.current.classList.contains('fa-bars')) {
-      console.log('si');
       refNav.current.classList.remove('fa-bars')
       refNav.current.classList.add('fa-times')
 

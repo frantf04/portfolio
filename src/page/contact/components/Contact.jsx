@@ -1,4 +1,4 @@
-import React, {useState } from 'react'
+import React, { useState } from 'react'
 import styles from '../css/Contact.module.css'
 import Swal from 'sweetalert2'
 
@@ -60,7 +60,7 @@ function Contact({ link = 'Enviar' }) {
         }
         console.log(error);
       });
-    
+
     setName('')
     setEmail('')
     setMessage('')
