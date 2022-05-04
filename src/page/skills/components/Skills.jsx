@@ -11,7 +11,7 @@ function Skills() {
         <SkillCard text="fab fa-sass" name="sass" />
         <SkillCard text="fab fa-js" name="javaScript" />
         <SkillCard text="fab fa-react" name="react" />
-        <SkillCard text="fab fa-git" name="Git" />
+        <SkillCard text="fab fa-git-alt" name="Git" />
         <SkillCard text="fab fa-github" name="github" />
         <SkillCard text="fab fa-npm" name="npm" />
 
