@@ -40,8 +40,8 @@
   height: 0; 
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  border-top: 10px solid #fff;
-  top: 30px;
+  border-top: 10px solid #0050ff;
+  top: 32px;
 }
 .card:hover{
   color:#000;
@@ -52,4 +52,8 @@
 .card:hover .card_tag{
   top: -50px;
   opacity: 1;
+}
+
+.noactive{
+  display: none;
 }

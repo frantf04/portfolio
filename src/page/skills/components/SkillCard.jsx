@@ -1,10 +1,14 @@
 import React from 'react'
 import styles from '../css/SkillCard.module.css'
 
-function SkillCard({text, name}) {
-  return (
-    <div className={styles.card}>
+function SkillCard({ text, name, arrow }) {
+  
+  const remove = ()=> {
+    arrow.current.classList.add(styles.noactive)
+  }
 
+  return (
+    <div onClick={remove} className={styles.card}>
       <div className={styles.card_tag}>
         {name}
       </div>
