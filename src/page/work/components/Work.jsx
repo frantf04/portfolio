@@ -11,27 +11,27 @@ function Work() {
 
   const workInfo = [
     {
-      name: 'aquino tech',
+      name: 'Aquino Tech',
       desc: 'Pagina en la cual se ofrece el servicio de raparación de dispositivo moviles, cuenta con un formulario donde puede solicitar una  reparacion a domicilio.',
       img: img1,
       link: 'https://aquinotech.do/'
     },
     {
-      name: 'peliculas',
+      name: 'Peliculas',
       desc: 'Una pagina en la cual encuentras los detalles  de las peliculas mas populares en la actualidad.',
       img: img3,
       link: 'https://jo-moviesdetails.herokuapp.com/'
     },
 
     {
-      name: 'generador de contraseñas',
+      name: 'Generador de contraseñas',
       desc: 'Un sistema en cual podras generar contraseñas cien por ciento aleatorias y segura; Elije la cantidad de digitos, los caracteres con los cuales quieres generar tu contraseña.',
       img: img4,
       link: 'https://generatepassword-johan-olmos.netlify.app/'
     },
 
     {
-      name: 'calculos simples',
+      name: 'Calculos simples',
       desc: 'Pagina en la cual puedes realizar cualquier calculos simples que requiera de las operaciones basicas (suma, resta, multiplicacion y division). ',
       img: img2,
       link: 'https://calculos-simples.netlify.app/'

@@ -18,7 +18,9 @@ function Skills() {
         <SkillCard arrow={refArrow}  text="fab fa-git-alt" name="Git" />
         <SkillCard arrow={refArrow}  text="fab fa-github" name="github" />
         <SkillCard arrow={refArrow}  text="fab fa-npm" name="npm" />
-      <span ref={refArrow}  className={styles.arrow_guide}><span>click</span><i className="fa fa-arrow-down"></i></span>
+        <span ref={refArrow} className={styles.arrow_guide}><span>
+        {window.screen.width > 1024? 'Mouse over' : 'Click'}
+        </span><i className="fa fa-arrow-down"></i></span>
 
       </div>
     </div>

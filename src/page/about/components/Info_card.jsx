@@ -9,7 +9,7 @@ function Info_card() {
     <div className={styles.info_card}>
       <div className={styles.titles_container}>
         <h1>HOLA</h1>
-        <h2>Quien soy & que hago</h2>
+        <h2>Quien soy y que hago.</h2>
       </div>
       <div className={styles.btn_container}>
         <a download={CV} href={CV}>DESCARGAR CV</a>
