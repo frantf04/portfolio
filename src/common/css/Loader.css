@@ -13,8 +13,8 @@
   width: 100%;
   height: 100vh;
   position: fixed;
-  background: #24292f;
-  background: #0050ff;
+  background: #e6dace;
+  background: #fff;
   z-index: 200;
   display: none;
   justify-content: center;
@@ -55,7 +55,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #fff;
+  background-color: #0050ff;
   -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
           animation: sk-foldCubeAngle 2.4s infinite linear both;
   -webkit-transform-origin: 100% 100%;

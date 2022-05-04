@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import styles from './css/Header.module.css'
 
 function Header() {
-  
   const refNav = useRef()
   function active(e) {
     for (let i = 0; i < e.target.parentNode.children.length; i++) {
@@ -35,9 +34,10 @@ function Header() {
             Johan Olmos
           </span>
         </Link>
-        <nav onClick={active}  className={styles.header_nav}>
+        <nav onClick={active} className={styles.header_nav}>
           {/* <Link  to='/'>Home</Link> */}
           <Link onClick={navActive} className={styles.active} to='/'>SOBRE MI</Link>
+          <Link onClick={navActive} to='/skills'>HABILIDADES</Link>
           <Link onClick={navActive} to='/work'>PROYECTOS</Link>
           <Link onClick={navActive} to='/contact'>CONTACTAME</Link>
         </nav>

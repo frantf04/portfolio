@@ -9,13 +9,14 @@ import Footer from "./common/Footer";
 import Loader from "./common/Loader";
 import ButtonToTop from "./common/ButtonToTop";
 import { useEffect, useState } from "react";
+import Skills from "./page/skills/components/Skills";
 
 function App() {
   const [loader, setLoader] = useState(false);
   useEffect(() => {
     setTimeout(() => {
       setLoader(true);
-    }, 2500);
+    }, 3000);
   })
 
   return (
@@ -28,6 +29,7 @@ function App() {
           <Header />
           <Routes>
             <Route path="/" element={<About />} />
+            <Route path="/skills" element={<Skills />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/work" element={<Work />} />
           </Routes>
