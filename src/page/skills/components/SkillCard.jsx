@@ -8,7 +8,7 @@ function SkillCard({ text, name, arrow }) {
   }
 
   return (
-    <div onClick={remove} className={styles.card}>
+    <div onClick={remove} onMouseOver={remove} className={styles.card}>
       <div className={styles.card_tag}>
         {name}
       </div>
