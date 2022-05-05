@@ -4,7 +4,6 @@ import Header from "./common/Header";
 import About from "./page/about/components/About";
 import Contact from "./page/contact/components/Contact";
 import Work from "./page/work/components/Work";
-// import curriculum from "./assets/CV.pdf";
 import Footer from "./common/Footer";
 import Loader from "./common/Loader";
 import ButtonToTop from "./common/ButtonToTop";
@@ -31,7 +30,7 @@ function App() {
             <Route path="/" element={<About />} />
             <Route path="/skills" element={<Skills />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/work" element={<Work />} />
+            <Route path="/works" element={<Work />} />
           </Routes>
           <Footer />
         </BrowserRouter>

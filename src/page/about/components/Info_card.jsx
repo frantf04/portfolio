@@ -13,7 +13,7 @@ function Info_card() {
       </div>
       <div className={styles.btn_container}>
         <a download={CV} href={CV}>DESCARGAR CV</a>
-        <Button link="/work" text="PROYECTOS" bg='transparent' color="#000" />
+        <Button link="/works" text="PROYECTOS" bg='transparent' color="#000" />
 
       </div>
       <div className={styles.p_container}>

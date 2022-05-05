@@ -1,16 +1,47 @@
-import React, { useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import styles from './css/Header.module.css'
 
 function Header() {
-  const refNav = useRef()
-  function active(e) {
-    for (let i = 0; i < e.target.parentNode.children.length; i++) {
-      e.target.parentNode.children[i].classList.remove(styles.active)
-      e.target.classList.add(styles.active)
 
+  const refAbout = useRef()
+  const refSkills = useRef()
+  const refWorks = useRef()
+  const refContact = useRef()
+  const refNav = useRef()
+
+  const active = ()=> {
+    if (window.location.href.includes('skills')) {
+      refAbout.current.classList.remove(styles.active)
+      refSkills.current.classList.add(styles.active)
+      refWorks.current.classList.remove(styles.active)
+      refContact.current.classList.remove(styles.active)
+    }
+    else if (window.location.href.includes('works')) {
+      refWorks.current.classList.add(styles.active)
+      refAbout.current.classList.remove(styles.active)
+      refSkills.current.classList.remove(styles.active)
+      refContact.current.classList.remove(styles.active)
+    }
+    else if (window.location.href.includes('contact')) {
+      refContact.current.classList.add(styles.active)
+      refWorks.current.classList.remove(styles.active)
+      refAbout.current.classList.remove(styles.active)
+      refSkills.current.classList.remove(styles.active)
+    }
+    else {
+      refAbout.current.classList.add(styles.active)
+      refSkills.current.classList.remove(styles.active)
+      refWorks.current.classList.remove(styles.active)
+      refContact.current.classList.remove(styles.active)
     }
   }
+
+  useEffect(() => {
+    document.addEventListener('onhashchange', () => {
+      active()
+    })
+  }, [])
 
   const navActive = (e) => {
     if (refNav.current.classList.contains('fa-bars')) {
@@ -26,6 +57,8 @@ function Header() {
     document.body.classList.toggle(styles.active)
   }
 
+
+
   return (
     <>
       <header className={styles.header}>
@@ -35,11 +68,10 @@ function Header() {
           </span>
         </Link>
         <nav onClick={active} className={styles.header_nav}>
-          {/* <Link  to='/'>Home</Link> */}
-          <Link onClick={navActive} className={styles.active} to='/'>SOBRE MI</Link>
-          <Link onClick={navActive} to='/skills'>HABILIDADES</Link>
-          <Link onClick={navActive} to='/work'>PROYECTOS</Link>
-          <Link onClick={navActive} to='/contact'>CONTACTAME</Link>
+          <Link ref={refAbout} onClick={navActive} className={styles.active} to='/'>SOBRE MI</Link>
+          <Link ref={refSkills} onClick={navActive} to='/skills'>HABILIDADES</Link>
+          <Link ref={refWorks} onClick={navActive} to='/works'>PROYECTOS</Link>
+          <Link ref={refContact} onClick={navActive} to='/contact'>CONTACTAME</Link>
         </nav>
         <span onClick={navActive} className={styles.menuBarBtn}><i ref={refNav} className="fas fa-bars"></i></span>
       </header>

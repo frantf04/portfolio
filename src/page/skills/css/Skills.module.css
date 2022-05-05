@@ -7,6 +7,10 @@
   background: #e6dace;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+    animation: op .8s linear forwards;
+    
+
 }
 .container h2{
   text-align: center;
@@ -74,3 +78,15 @@
   }
 }
 
+
+@keyframes op {
+  25%{
+    opacity: 0;
+  }
+  50%{
+    opacity: .5;
+  }
+  100%{
+    opacity: 1;
+  }
+}

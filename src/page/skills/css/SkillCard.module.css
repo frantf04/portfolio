@@ -50,10 +50,11 @@
 
 }
 .card:hover .card_tag{
-  top: -50px;
+  top: -45px;
   opacity: 1;
 }
 
 .noactive{
   display: none;
 }
+

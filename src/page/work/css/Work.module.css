@@ -1,5 +1,4 @@
-
-.container{
+.container {
   width: 100%;
   display: flex;
   min-height: 100vh;
@@ -7,11 +6,13 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  transition: all .2s;
+  transition: all 0.2s;
   background: #e6dace;
+  opacity: 0;
+  animation: op 0.8s linear forwards;
 }
 
-.cards_container{
+.cards_container {
   width: 800px;
   max-width: 96%;
   display: flex;
@@ -39,9 +40,17 @@
 
 .container p.first_text {
   text-align: center;
-  padding:  0 1rem;
+  padding: 0 1rem;
 }
 
-
-
-
+@keyframes op {
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
