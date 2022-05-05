@@ -12,6 +12,7 @@
   align-items: center;
   color: #000;
   background: #fff;
+  border-bottom: 2px solid #0050ff;
 }
 
 .card .img_container,
