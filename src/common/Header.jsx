@@ -38,9 +38,7 @@ function Header() {
   }
 
   useEffect(() => {
-    document.addEventListener('onhashchange', () => {
       active()
-    })
   }, [])
 
   const navActive = (e) => {
