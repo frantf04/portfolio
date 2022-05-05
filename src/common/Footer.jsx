@@ -13,7 +13,7 @@ function Footer() {
         <div className={styles.contact_container}>
           <div className={styles.call}>
             <h4 className={styles.title}>Llamame</h4>
-            <p>+1 (849) 884-3484</p>
+            <p>+1 (849) 876-4788</p>
           </div>
           <div className={styles.write}>
             <h4 className={styles.title}>Escribeme</h4>
