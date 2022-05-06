@@ -11,13 +11,14 @@
 .contact_container {
   display: flex;
   min-height: 100%;
+  justify-content:center;
   align-items: center;
   gap: 1rem;
   text-align: center;
 }
 
 .contact_container p {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 
 .react_link {
@@ -27,7 +28,7 @@
 
 .folow p {
   display: flex;
-  gap: 1rem;
+  gap: .6rem;
 }
 
 .folow p a {
@@ -73,14 +74,21 @@
 
 
   .contact_container {
-    font-size: 12px;
+    width: 100%;
     flex-wrap: nowrap;
+
   }
   .folow{
     gap: 1px;
   }
 }
 @media screen and (max-width: 340px) {
+  .copyright{
+    width: 100%;
+    text-align: center;
+    padding:0;
+    margin: 0;
+  }
   .footer {
     /* flex-wrap: wrap; */
     padding: 1rem;

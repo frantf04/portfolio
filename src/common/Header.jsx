@@ -10,7 +10,7 @@ function Header() {
   const refContact = useRef()
   const refNav = useRef()
 
-  const active = ()=> {
+  const active = () => {
     if (window.location.href.includes('skills')) {
       refAbout.current.classList.remove(styles.active)
       refSkills.current.classList.add(styles.active)
@@ -38,7 +38,7 @@ function Header() {
   }
 
   useEffect(() => {
-      active()
+    active()
   }, [])
 
   const navActive = (e) => {
@@ -79,4 +79,4 @@ function Header() {
   )
 }
 
-export default Header
+export default Header;

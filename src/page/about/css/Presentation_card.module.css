@@ -23,7 +23,8 @@
   border-radius: 25px;
   /* border: 1px solid #000; */
   text-decoration: none;
-  display: inline-block;
+  display: flex;
+  align-items: center;
   text-align: center;
   background: #0050ff;
   color: #fff;
@@ -88,5 +89,11 @@
 
   .btn_container{
     display: flex;
+  }
+}
+
+@media screen and (max-width:360px){
+  .btn_container a{
+    font-size: .8rem;
   }
 }

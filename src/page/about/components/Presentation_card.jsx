@@ -18,8 +18,8 @@ function presentation_card() {
       <div className={styles.div}></div>
       <div className={styles.btn_container}>
         {/* <Button download={CV} link={CV} text="DESCARGAR CV" bg='#f00' border="#f00" color="#fff"/> */}
-        <a download={CV} href={CV}>DESCARGAR CV</a>
-        <Button link="/work" text="PROYECTOS" bg='transparent' color="#000"/>
+        <a className={styles.btn} download={CV} href={CV}>DESCARGAR CV</a>
+        <Button className={styles.btn} link="/works" text="PROYECTOS" bg='transparent' color="#000"/>
         
       </div>
       <h3>Dsarrollador Front-end</h3>

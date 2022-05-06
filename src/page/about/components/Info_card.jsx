@@ -12,8 +12,8 @@ function Info_card() {
         <h2>Quien soy y que hago.</h2>
       </div>
       <div className={styles.btn_container}>
-        <a download={CV} href={CV}>DESCARGAR CV</a>
-        <Button link="/works" text="PROYECTOS" bg='transparent' color="#000" />
+        <a className={styles.btn} download={CV} href={CV}>DESCARGAR CV</a>
+        <Button className={styles.btn} link="/works" text="PROYECTOS" bg='transparent' color="#000" />
 
       </div>
       <div className={styles.p_container}>
