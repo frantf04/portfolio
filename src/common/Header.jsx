@@ -69,7 +69,7 @@ function Header() {
           <Link ref={refAbout} onClick={navActive} className={styles.active} to='/'>SOBRE MI</Link>
           <Link ref={refSkills} onClick={navActive} to='/skills'>HABILIDADES</Link>
           <Link ref={refWorks} onClick={navActive} to='/works'>PROYECTOS</Link>
-          <Link ref={refContact} onClick={navActive} to='/contact'>CONTACTAME</Link>
+          <Link ref={refContact} onClick={navActive} to='/contact'>CONTÁCTAME</Link>
         </nav>
         <span onClick={navActive} className={styles.menuBarBtn}><i ref={refNav} className="fas fa-bars"></i></span>
       </header>
