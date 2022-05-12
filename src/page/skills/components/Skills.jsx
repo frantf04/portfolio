@@ -1,6 +1,7 @@
 import React, { useRef } from 'react'
 import styles from '../css/Skills.module.css'
-import SkillCard from './SkillCard'
+import SkillCard from './SkillCard';
+import sql from '../../../assets/img/sql-server.png'
 function Skills() {
 
   const refArrow = useRef()
@@ -18,6 +19,8 @@ function Skills() {
         <SkillCard arrow={refArrow}  text="fab fa-git-alt" name="Git" />
         <SkillCard arrow={refArrow}  text="fab fa-github" name="github" />
         <SkillCard arrow={refArrow}  text="fab fa-npm" name="npm" />
+        {/* <SkillCard arrow={refArrow} text="fas fa-server" name="Sql-server"/> */}
+        {/* <SkillCard arrow={refArrow} text="fab fa-node" name="node-js"/> */}
         <span ref={refArrow} className={styles.arrow_guide}><span>
         {window.screen.width > 1024? 'Mouse over' : 'Click'}
         </span><i className="fa fa-arrow-down"></i></span>

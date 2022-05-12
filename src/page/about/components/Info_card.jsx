@@ -9,7 +9,7 @@ function Info_card() {
     <div className={styles.info_card}>
       <div className={styles.titles_container}>
         <h1>HOLA</h1>
-        <h2>Quien soy y que hago.</h2>
+        <h2>Quién soy y que hago?</h2>
       </div>
       <div className={styles.btn_container}>
         <a className={styles.btn} download={CV} href={CV}>DESCARGAR CV</a>
@@ -17,10 +17,11 @@ function Info_card() {
 
       </div>
       <div className={styles.p_container}>
-        <p>Desarrollador Front-end con mas de 2 años de experiencia.Los
-          lenguajes de programación que mas domino incluyen:
-          React/JavaScript, Me considero una persona muy Implicada y
-          con capacidad para detectar y solucionar problemas. </p>
+        <p>Desarrollador Front-end con mas de 2 años de experiencia. Los
+          lenguajes de programación que más domino incluyen:
+          React y Javascript, Me considero una persona muy aplicada y
+          con capacidad para detectar y solucionar problemas.
+ </p>
         <p>En esto
           momentos estoy buscando un trabajo que me permita seguir
           ampliando mi experiencia, aprender de grandes profesionales
