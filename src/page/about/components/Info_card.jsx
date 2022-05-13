@@ -22,8 +22,8 @@ function Info_card() {
           React\Javascript, me considero una persona muy aplicada y
           con capacidad para detectar y solucionar problemas.
  </p>
-        <p>En esto
-          momentos estoy buscando un trabajo que me permita seguir
+        <p>En este
+          momento estoy buscando un trabajo que me permita seguir
           ampliando mi experiencia, aprender de grandes profesionales
           y asumir nuevas responsabilidades.</p>
       </div>
