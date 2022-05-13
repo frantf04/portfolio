@@ -19,7 +19,7 @@ function Info_card() {
       <div className={styles.p_container}>
         <p>Desarrollador Front-end con mas de 2 años de experiencia. Los
           lenguajes de programación que más domino incluyen:
-          React y Javascript, Me considero una persona muy aplicada y
+          React\Javascript, me considero una persona muy aplicada y
           con capacidad para detectar y solucionar problemas.
  </p>
         <p>En esto
