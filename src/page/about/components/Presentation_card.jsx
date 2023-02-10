@@ -1,5 +1,6 @@
 import React from 'react'
-import img from '../../../assets/img/yo.png'
+// import img2 from '../../../assets/img/yo.png'
+import img from '../../../assets/img/yo.jpg'
 import styles from '../css/Presentation_card.module.css'
 import CV from '../../../assets/CV.pdf'
 import Button from '../../../common/Button'
