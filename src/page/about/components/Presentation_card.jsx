@@ -2,7 +2,7 @@ import React from 'react'
 // import img2 from '../../../assets/img/yo.png'
 import img from '../../../assets/img/yo.jpg'
 import styles from '../css/Presentation_card.module.css'
-import CV from '../../../assets/CV.pdf'
+import CV from '../../../assets/CV1.pdf'
 import Button from '../../../common/Button'
 
 
