@@ -23,7 +23,7 @@ function presentation_card() {
         <Button className={styles.btn} link="/works" text="PROYECTOS" bg='transparent' color="#000"/>
         
       </div>
-      <h3>Dsarrollador Front-end</h3>
+      <h3>Dsarrollador Web</h3>
       <div className={styles.social}>
         <a target='_blank'href="https://www.facebook.com/profile.php?id=100004261665261"><i className="fa fa-facebook"></i></a>
         <a target='_blank'href="https://www.instagram.com/_fran_tf/"><i className="fa fa-instagram"></i></a>

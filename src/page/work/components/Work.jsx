@@ -5,10 +5,13 @@ import img1 from '../../../assets/img/aquinotech.png';
 import img2 from '../../../assets/img/calculos.png';
 import img3 from '../../../assets/img/peliculas.png';
 import img4 from '../../../assets/img/generatepassword.png';
+import img5 from '../../../assets/img/note.png';
+import img6 from '../../../assets/img/typing.png';
+import img7 from '../../../assets/img/clock.png';
 
 
 function Work() {
-
+  let dominio = "jfodev.com"
   const workInfo = [
     {
       name: 'Aquino Tech',
@@ -20,14 +23,33 @@ function Work() {
       name: 'Peliculas',
       desc: 'Una pagina en la cual encuentras los detalles  de las peliculas mas populares en la actualidad.',
       img: img3,
-      link: 'https://jo-moviesdetails.herokuapp.com/'
+      link: `https://movies.${dominio}/`
     },
 
     {
       name: 'Generador de contraseñas',
       desc: 'Un sistema en cual podras generar contraseñas cien por ciento aleatorias y segura; Elije la cantidad de digitos, los caracteres con los cuales quieres generar tu contraseña.',
       img: img4,
-      link: 'https://generatepassword-johan-olmos.netlify.app/'
+      link: `https://genpass.${dominio}`
+    },
+    {
+      name: 'Notas',
+      desc: 'Una web de notas que te permite escribir y guardar tus apuntes en un abrir y cerrar de ojos.',
+      img: img5,
+      link: `https://note.${dominio}`
+    },
+    {
+      name: 'Typing',
+      desc: 'Test de velocidad: Realiza un emocionante desafío para ver cuán rápido puedes escribir en 60 segundos.',
+      img: img6,
+      link: `https://typing.${dominio}`
+    },
+    {
+      name: 'Clock',
+      desc: `un programa de tiempo que ofre la hora actual: mantente al día con la hora exacta en tu zona horaria,Temporizador: Configura alarmas y temporizadores para recordatorios y tareas específicas,
+      Cronómetro: Mide el tiempo con precisión para tus actividades deportivas o proyectos.`,
+      img: img7,
+      link: `https://clock.${dominio}`
     },
 
     {

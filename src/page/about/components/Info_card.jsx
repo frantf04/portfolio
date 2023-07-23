@@ -1,5 +1,5 @@
 import React from 'react'
-import CV from '../../../assets/CV.pdf'
+import CV from '../../../assets/CV1.pdf'
 import Button from '../../../common/Button'
 import styles from '../css/Info_card.module.css'
 
@@ -8,7 +8,7 @@ function Info_card() {
 
     <div className={styles.info_card}>
       <div className={styles.titles_container}>
-        <h1>HOLA</h1>
+        <h1>Hola!</h1>
         <h2>Quién soy y que hago?</h2>
       </div>
       <div className={styles.btn_container}>
@@ -17,15 +17,10 @@ function Info_card() {
 
       </div>
       <div className={styles.p_container}>
-        <p>Desarrollador Front-end con mas de 2 años de experiencia. Los
-          lenguajes de programación que más domino incluyen:
-          React\Javascript, me considero una persona muy aplicada y
-          con capacidad para detectar y solucionar problemas.
- </p>
-        <p>En este
-          momento estoy buscando un trabajo que me permita seguir
-          ampliando mi experiencia, aprender de grandes profesionales
-          y asumir nuevas responsabilidades.</p>
+        <p>
+        Soy un apasionado Desarrollador web con más de 2 años de experiencia en el campo. Mi principal enfoque está en crear experiencias digitales excepcionales utilizando las últimas tecnologías y mejores prácticas.
+        </p>
+        <p>React\Javascript: Estos lenguajes de programación son mi fuerte. Con ellos, he creado aplicaciones web interactivas y dinámicas incluyendo este portafolio.</p>
       </div>
     </div>
   )

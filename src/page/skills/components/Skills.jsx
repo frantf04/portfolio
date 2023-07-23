@@ -19,7 +19,10 @@ function Skills() {
         <SkillCard arrow={refArrow}  text="fab fa-git-alt" name="Git" />
         <SkillCard arrow={refArrow}  text="fab fa-github" name="github" />
         <SkillCard arrow={refArrow}  text="fab fa-npm" name="npm" />
-        {/* <SkillCard arrow={refArrow} text="fas fa-server" name="Sql-server"/> */}
+        <SkillCard arrow={refArrow}  text="fab fa-node-js" name="node.js" />
+        {/* <SkillCard arrow={refArrow}  text="fab fa-node-js" name="node.js" /> */}
+        <SkillCard arrow={refArrow}  text="fas fa-database" name="MySQL" />
+        <SkillCard arrow={refArrow} text="fas fa-server" name="Sql-server"/>
         {/* <SkillCard arrow={refArrow} text="fab fa-node" name="node-js"/> */}
         <span ref={refArrow} className={styles.arrow_guide}><span>
         {window.screen.width > 1024? 'Mouse over' : 'Click'}
