@@ -7,8 +7,8 @@ function Footer() {
       <footer className={styles.footer}>
         <div className={styles.copyright}>
           <p>
-            © 2022 by Johan Olmos.</p>
-          <p>Creado con <a className={styles.react_link} href="https://reactjs.org/" target="_blank">React</a></p>
+            © {new Date().getFullYear()} by Johan Olmos.</p>
+          {/* <p>Creado con <a className={styles.react_link} href="https://reactjs.org/" target="_blank">React</a></p> */}
         </div>
         <div className={styles.contact_container}>
           <div className={styles.call}>
@@ -23,7 +23,7 @@ function Footer() {
             <h4 className={styles.title}>Sígueme</h4>
             <p>
               <a target='_blank' href="https://www.facebook.com/profile.php?id=100004261665261"><i className="fa fa-facebook"></i></a>
-              <a target='_blank' href="https://www.instagram.com/_fran_tf/"><i className="fa fa-instagram"></i></a>
+              <a target='_blank' href="https://www.instagram.com/_johan_tf/"><i className="fa fa-instagram"></i></a>
               <a target='_blank' href="https://github.com/frantf04"><i className="fa fa-github"></i></a>
               <a target='_blank' href="https://www.linkedin.com/in/johan-olmos-6bb436225/"><i className="fa fa-linkedin"></i></a>
             </p>

@@ -1,5 +1,5 @@
 import React from 'react'
-import CV from '../../../assets/CV1.pdf'
+import CV from '../../../assets/JFOCV.pdf'
 import Button from '../../../common/Button'
 import styles from '../css/Info_card.module.css'
 
@@ -18,7 +18,7 @@ function Info_card() {
       </div>
       <div className={styles.p_container}>
         <p>
-        Soy un apasionado Desarrollador web con más de 2 años de experiencia en el campo. Mi principal enfoque está en crear experiencias digitales excepcionales utilizando las últimas tecnologías y mejores prácticas.
+        Soy un apasionado Desarrollador web con más de 3 años de experiencia en el campo. Mi principal enfoque está en crear experiencias digitales excepcionales utilizando las últimas tecnologías y mejores prácticas.
         </p>
         <p>React\Javascript: Estos lenguajes de programación son mi fuerte. Con ellos, he creado aplicaciones web interactivas y dinámicas incluyendo este portafolio.</p>
       </div>
