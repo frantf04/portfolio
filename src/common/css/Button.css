@@ -1,7 +1,7 @@
 .btn{
   padding: .5rem 1rem;;
   border-radius: 25px;
-  border: 1px solid #000;
+  border: 1px solid var(--dark);
   text-decoration: none;
   display: inline-block;
   text-align: center;

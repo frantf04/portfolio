@@ -1,68 +1,110 @@
 .info_card {
-  width: calc(100% /2);
-  min-height: 100%;
-  padding: 0.5rem 2rem;
+  width: 100%;
+  height:calc( 100vh - 60px);
+  padding: 5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: content-box;
+  text-align: justify;
+  background: var(--dark);
+  position: relative;
+  
+}
+.info_card canvas {
+  max-height: 100%;
+}
+
+.text_container {
+  width: 800px;
+  max-width: 95%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  align-items: space-center;
- /* box-sizing: content-box; */
- text-align: justify; 
-
-
+  gap: 20px;
+  font-weight: bolder;
+  /* border: 1px solid red; */
+  padding: 10px;
 }
 
 .titles_container h1 {
-  font-size: 5rem;
+  font-size: max(1.2rem, 4vw);
+  color: #fff;
+
+}
+.titles_container p {
+  color: var(--green);
+  margin: 1rem 0;
+  font-weight: bolder;
+
+}
+.subtitles_container h2 {
+  color: var(--slate);
+  font-size: max(1.2rem, 2.5rem);
+  display: inline;
+}
+.p_container p {
+  font-size: max(15px, 1.2vw);
+
 }
 
 .btn_container {
   width: 100%;
   display: flex;
-  /* justify-content: center; */
   gap: 1rem;
   text-align: center;
   margin: 2rem 0;
 }
 
-.btn_container a{
-  padding: .5rem 1rem;;
-  border-radius: 25px;
-  /* border: 1px solid #000; */
+.btn_container a {
+  padding: .8rem 1rem;
+  border-radius: 6px;
   text-decoration: none;
   display: inline-block;
-  text-align: center;
-  background: #0050ff;
-  color: #fff;
+  color: var(--green);
+  border: 1px solid var(--green);
+  transition: all .3s ease;
 
+}
+
+.btn_container a:active {
+  transform: scale(.95);
+
+}
+
+.btn_container a:hover {
+  background: #22D3EE;
+  background: var(--light-navy);
+  transform: scale(1.1);
 }
 
 .p_container {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  font-weight: 100;
+  line-height: 25px;
+}
+.p_container p {
+  color: var(--light-slate);
 }
 
-@media screen and (max-width: 775px) {
-  .info_card{
+/* @media screen and (max-width: 775px) {
+  .info_card {
     width: 100%;
-    min-height:400px;
+    min-height: 400px;
     justify-content: flex-start;
   }
 
-  .btn_container{
-    display: none;
+ 
+
+  .titles_container {
+    margin-top: 1.5rem;
   }
-.titles_container{
-  margin-top: 1.5rem;
-}
-  .titles_container h1{
+
+  .titles_container h1 {
     padding: .5rem 0;
-    font-size: 3.5rem
   }
-  .titles_container h2{
+
+  .titles_container h2 {
     padding: .7rem 0;
   }
-}
-
-
+} */

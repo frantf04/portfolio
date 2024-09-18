@@ -13,8 +13,7 @@
   width: 100%;
   height: 100vh;
   position: fixed;
-  background: #e6dace;
-  background: #fff;
+  background: var(--navy);
   z-index: 200;
   display: none;
   justify-content: center;
@@ -24,11 +23,6 @@
 .loading {
   display: flex;
 }
-/* .loader p{
-  color: #fff;
-  font-size: 1.5rem;
-  margin: 1rem;
-} */
 
 .sk-folding-cube {
   margin: 20px auto;
@@ -55,7 +49,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #0050ff;
+  background-color: var(--green);
   -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
           animation: sk-foldCubeAngle 2.4s infinite linear both;
   -webkit-transform-origin: 100% 100%;

@@ -1,0 +1,36 @@
+.socialLinks {
+  position: fixed;
+  bottom: 0;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.socialLinks ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.socialLinks li a {
+  color: var(--light-slate);
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.line {
+  width: 1px;
+  height: 100px;
+  background: var(--light-slate);
+}
+
+
+@media (max-width: 825px) {
+  .socialLinks{ display:  none;
+  }
+
+}

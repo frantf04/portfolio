@@ -1,5 +1,6 @@
 .container {
   width: 100%;
+  margin-top: 60px;
   display: flex;
   min-height: 100vh;
   flex-wrap: wrap;
@@ -7,21 +8,35 @@
   align-items: center;
   flex-direction: column;
   transition: all 0.2s;
-  background: #e6dace;
   opacity: 0;
   animation: op 0.8s linear forwards;
+  /* background: #fff; */
+  /* background: var(--dark); */
 }
 
-.cards_container {
-  width: 800px;
-  max-width: 96%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+
+.cards_container{
+  width: 960px;
+  max-width: 100%;
+  list-style: none;
+  padding: 0px;
+  margin: 50px 0px;
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 15px;
+  position: relative;
+  position: relative;
+  align-content: space-evenly;
+  justify-content: space-evenly;
+  align-items: stretch;
+  padding: 10px;
+
 }
 
 .title {
-  color: #000;
+  color: #fff;
   font-size: 2.5rem;
   position: relative;
   display: flex;
@@ -29,18 +44,19 @@
   margin-top: 4rem;
   margin-bottom: 1.5rem;
 }
-.title::before {
-  content: "";
-  width: 20px;
-  height: 20px;
-  background: #0050ff;
-  position: absolute;
-  left: -25px;
-}
+
 
 .container p.first_text {
   text-align: center;
   padding: 0 1rem;
+  color: var(--light-slate);
+}
+
+
+@media screen and (max-width: 775px) {
+  .title {
+    font-size: 1.5rem;
+  }
 }
 
 @keyframes op {

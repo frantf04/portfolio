@@ -12,12 +12,15 @@ function Contact({ link = 'Enviar' }) {
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [sending, setSending] = useState(false);
   const online = navigator.onLine;
 
 
 
   const formsubmit = (e) => {
     e.preventDefault();
+    if (sending) return
+    setSending(true)
     // https://github.com/github/fetch
     fetch("https://formsubmit.co/ajax/frantf04@gmail.com", {
       method: "POST",
@@ -34,6 +37,7 @@ function Contact({ link = 'Enviar' }) {
     })
       .then(response => response.json())
       .then(data => {
+        setSending(false)
         Swal.fire({
           position: 'center',
           icon: 'success',
@@ -43,6 +47,7 @@ function Contact({ link = 'Enviar' }) {
         })
       })
       .catch(error => {
+        setSending(false)
         if (!online) {
           Swal.fire(
             'Error de conexion?',
@@ -62,6 +67,7 @@ function Contact({ link = 'Enviar' }) {
       });
 
     setName('')
+    setLastName('')
     setEmail('')
     setMessage('')
 
@@ -70,6 +76,9 @@ function Contact({ link = 'Enviar' }) {
 
   return (
     <div className={styles.contact}>
+      <div className={styles.loader} style={{display: sending?"flex":'none'}}>
+          <span></span>
+      </div>
       <h3 className={styles.titulo}>Hablemos</h3>
       <form onSubmit={formsubmit} name='myForm' action="https://formsubmit.co/frantf04@gmail.com" method="POST" className={styles.form}>
         <div className={styles.row}>

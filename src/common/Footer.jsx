@@ -1,14 +1,13 @@
-import React from 'react'
-import styles from './css/Footer.module.css'
+import React from "react";
+import styles from "./css/Footer.module.css";
 
 function Footer() {
   return (
     <>
-      <footer className={styles.footer}>
+      <footer className={styles.footerMobile}>
         <div className={styles.copyright}>
           <p>
-            © {new Date().getFullYear()} by Johan Olmos.</p>
-          {/* <p>Creado con <a className={styles.react_link} href="https://reactjs.org/" target="_blank">React</a></p> */}
+            ©{new Date().getFullYear()} by Johan Olmos.</p>
         </div>
         <div className={styles.contact_container}>
           <div className={styles.call}>
@@ -30,8 +29,12 @@ function Footer() {
           </div>
         </div>
       </footer>
+      <footer className={styles.footer}>
+        <p>johantf04@gmail.com</p>
+        <div className={styles.line}></div>
+      </footer>
     </>
-  )
+  );
 }
 
-export default Footer
+export default Footer;

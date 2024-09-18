@@ -1,36 +1,62 @@
 .contact {
   width: 100%;
-  min-height: 100vh;
+  min-height: calc(100vh - 60px);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: #e6dace;
+  background: var(--dark);
   opacity: 0;
   animation: op .8s linear forwards;
+  margin-top: 60px;
+  
+}
 
+.contact .loader {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: transparent;
+  z-index: 100;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader span {
+  width: 50px;
+  height: 50px;
+  border: 5px solid  darkgray;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: rotate 1s linear infinite;
+  
+}
+
+.loader span::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border:  5px solid transparent;
+  border-right-color: var(--green);
 }
 
 .titulo {
-  color: #000;
+  color: var(--light-slate);
   font-size: 3rem;
-  /* margin-bottom: 5rem; */
   position: relative;
   display: flex;
   align-items: center;
   margin-top: 4rem;
   margin-bottom: 1.5rem;
 }
-.titulo::before {
-  content: "";
-  width: 20px;
-  height: 20px;
-  background: #0050ff;
-  position: absolute;
-  left: -25px;
-}
+
 .form {
-  /* margin: 0 auto; */
   width: 680px;
   max-width: 95%;
   min-height: 700px;
@@ -38,8 +64,8 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  padding: 2rem 4rem;
-  background: #fff;
+  padding: 2rem 1rem;
+  background: var(--light-navy);
   margin: 2rem 0;
 }
 
@@ -52,8 +78,8 @@
   font-size: 1rem;
   border: none;
   outline: none;
-  border-bottom: 2px solid #000;
-  color: #000;
+  border-bottom: 2px solid #fff;
+  color: #fff;
   background: rgba(255, 255, 255, 0.1);
   /* border-radius: 5px; */
 }
@@ -68,13 +94,13 @@
 }
 .form input:hover,
 .form textarea:hover {
-  border-color: #0050ff;
+  border-color: var(--green);
 }
 
 .form button {
   padding: 0.5rem 1rem;
-  color: #fff;
-  background: #0050ff;
+  color: var(--navy);
+  background: var(--green);
   cursor: pointer;
   border: none;
   font-size: 1.25rem;
@@ -95,12 +121,13 @@
 
 .form  label.required::after {
   content: "*";
-  color: #0050ff;
+  color: var(--green);
   position: absolute;
 }
 
 .form label{
   font-weight: bold;
+  color: #fff;
 }
 
 
@@ -113,5 +140,11 @@
   }
   100%{
     opacity: 1;
+  }
+}
+
+@keyframes rotate {
+  to{
+    transform: rotate(360deg);
   }
 }

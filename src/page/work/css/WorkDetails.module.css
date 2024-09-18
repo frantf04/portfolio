@@ -1,0 +1,39 @@
+.cantainer {
+  width: 100%;
+  min-height: calc(100vh - 60px);
+  display: flex;
+  margin: 60px auto;
+  flex-direction: column;
+  /* border: 1px solid red; */
+  text-align: center;
+  gap: 1rem;
+  color: var(--light-slate);
+}
+
+.carousel {
+  width: 1000px;
+  max-width: 85%;
+  margin: auto;
+  cursor: grab;
+}
+
+.carousel:active{
+  cursor: grabbing;
+}
+
+.desc{
+  margin: auto;
+  width: 1000px;
+  max-width: 85%;
+  text-align: left;
+}
+
+.desc h2 {
+  color:  var(--green);
+  padding: 10px 0;
+  font-size: 1rem;
+}
+
+
+
+
